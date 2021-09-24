@@ -9,6 +9,6 @@ export const CustomElementStory = () => ({
 export const CustomElementStoryWithProps = () => ({
   Component: CustomElement,
   props: {
-    title: 'Hello from props!!',
+    catalog_image_id: '78',
   },
 })

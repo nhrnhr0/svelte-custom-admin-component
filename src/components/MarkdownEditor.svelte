@@ -14,7 +14,7 @@
 <style lang="scss">
 	
     .markdown-editor__result-html{
-        border: 1px solid black;
+        border: 1px solid pink;
         padding: 20px;
     }
 	

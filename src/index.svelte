@@ -22,7 +22,6 @@
 			return ''
 		}
 	}
-	let value = undefined;
 	onMount(()=>{
 		let catalogImageUrl = ENDPOINT_API + 'svelte/api/products/' + catalog_image_id + '/';
 
@@ -128,8 +127,41 @@
 	</form>
 </main>
 
-<style lang="scss">
-	.markdown {
+<style>
+  .markdown {
+	 display: flex;
+	 flex-direction: row;
+}
+ .prices {
+	 display: flex;
+}
+ .prices .calc {
+	 padding-right: 10px;
+	 color: green;
+}
+ .prices .calc.red {
+	 color: red;
+}
+ main {
+	 direction: rtl;
+	 padding-top: 150px;
+	 width: 80%;
+	 margin: auto;
+}
+ main form .form-group {
+	 padding-top: 25px;
+	 padding-bottom: 25px;
+	 display: flex;
+	 justify-content: start;
+	 align-items: center;
+	 border-bottom: 1px solid black;
+}
+ main form .form-group label {
+	 padding-left: 50px;
+	 padding-right: 25px;
+}
+ 
+	/*.markdown {
 		display:flex;
 		flex-direction: row;
 	}
@@ -162,7 +194,7 @@
 				border-bottom: 1px solid black;
 			}
 		}
-	}
+	}*/
 
 
 
